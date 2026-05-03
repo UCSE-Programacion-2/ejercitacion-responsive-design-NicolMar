@@ -15,7 +15,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300px;
+    font-weight: 300;
+    overflow-x: hidden;
 }
 
 img {
@@ -60,7 +61,7 @@ nav ul li a {
 }
 
 .bg-header h1 {
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 /* Estilos section */
@@ -184,3 +185,124 @@ footer ul {
 
 /*** Responsive */
 
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .bg-header {
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .bg-header h1 {
+    font-size: 2rem;
+  }
+
+  section,
+  footer {
+    padding: 30px 20px;
+  }
+
+  #card-section > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    margin: 15px 10px;
+  }
+
+  section > div {
+    flex-direction: column;
+  }
+
+  .contacto,
+  .formulario {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    padding: 15px 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bg-header {
+    height: 220px;
+  }
+
+  .bg-header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  section,
+  footer {
+    padding: 25px 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #card-section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+   width: 90%;
+   margin: 15px auto;
+   padding: 20px;
+  }
+
+  .card img {
+  width: 100%;
+  height: auto;
+  }
+
+  .contacto,
+  .formulario {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  form {
+    padding: 25px 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .news-letter > input[type="submit"] {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
